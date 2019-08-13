@@ -121,12 +121,16 @@ C:/work/jdk/adoptopenjdk-win-x64/openj9_jdk-11.0.3_7/bin/javaw.exe
   - `[Java]` -> `[Editor]` -> `[Content Assist]` -> `[Favorites]` に以下を追加
   - `org.junit.jupiter.api.Assertions` : JUnit5
   - `org.assertj.core.api.Assertions` : AssertJ
+  - [mockito](https://site.mockito.org) を使う場合は、以下を追加すると良い。
+  - `org.mockito.ArgumentMatchers`
+  - `org.mockito.Mockito`
 - どこで「;」を押しても行末にいれる
   - `[Java]` -> `[Editor]` -> `[Typing]` -> `Automatically insert at correct position` の `Semicolons` にチェックを入れる。
 - クラス名なのか変数名なのかわかりやすくするためのSyntax Coloring
   - `[Java]` -> `[Editor]` -> `[Syntax Coloring]` -> Classes,Enums,IntefacesなどをEnable,Boldにする。
 - `com.sun` 以下, `sun` 以下, java.awt.List や Swingパッケージを補完対象から外す
   - `[Java]` -> `[Appearance]` -> `[Type Filters]` -> `Add` ボタンで、`com.sun.**`, `sun.*`, `java.awt.*`, `javax.swing.*` を追加
+  - その他使っているライブラリに応じて、アプリケーション側では使わないパッケージを追加するなどしてチューニングしておくと、import補完などの精度が向上する。
 - Workspaceでの改行コードや文字コード
   - `[General]` -> `[Workspace]` で変更。（最近はデフォルトでUTF-8になってる。改行もデフォルト任せでよい）
 - JSPファイルの文字コード
